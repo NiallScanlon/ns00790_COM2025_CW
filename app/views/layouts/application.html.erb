@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ns00790Com2025Projct</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+<header>
+  <% if signed_in? %>
+    Signed in as: <%= current_user.email %>
+    <%= button_to 'Sign out', sign_out_path, method: :delete %>
+  <% else %>
+    <%= link_to 'Sign in', sign_in_path %>
+  <% end %>
+</header>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">Palm Valley Barbers</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+      <li><a href="/contact">Contact us</a></li>
+      <li><a href="/bookings">Book an appointment</a></li>
+      <li><a href="/our-team">Our Team</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"> <% if signed_in? %>
+          Signed in as: <%= current_user.email %>
+        <% else %>
+          <%= link_to 'Sign in', sign_in_path %>
+        <% end %></a></li>
+      <li><a href="#">
+
+        <% if signed_in? %>
+          <%= button_to 'Sign out', sign_out_path, method: :delete %> <%end%> </a></li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+
+<section>
+  <div id="flash">
+    <% flash.each do |key, value| %>
+      <div class="flash <%= key %>"><%= value %></div>
+    <% end %>
+  </div>
+
+  <%= yield %>
+</section>
+</body>
+</html>
