@@ -2,7 +2,7 @@
 
 <p>
   <strong>Barber:</strong>
-  <%= @booking.barber_id %>
+  <%= Barber.find(@booking.barber_id).name %>
 </p>
 
 <p>
@@ -15,10 +15,6 @@
   <%= @booking.status %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @booking.user_id %>
-</p>
 
 <%= link_to 'Edit', edit_booking_path(@booking) %> |
 <%= link_to 'Back', bookings_path %>
