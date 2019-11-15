@@ -12,6 +12,8 @@
   <% end %>
 
 
+  <div class = "container-fluid">
+    <h1>New Booking</h1>
   <div class = "field">
     <%= form.label :Barber %>
     <%= collection_select(:booking, :barber_id, Barber.all, :id, :name, {}, {:multiple => false} )%>
@@ -33,5 +35,6 @@
 
   <div class="actions">
     <%= form.submit %>
+  </div>
   </div>
 <% end %>

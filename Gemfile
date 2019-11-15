@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'clearance'
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'amoeba'
+gem 'mail_form'
 gem 'rails-controller-testing'
 gem 'mail_form'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
