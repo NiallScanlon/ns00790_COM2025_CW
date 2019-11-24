@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<div class="container-fluid">
 <h1>Barbers</h1>
-
 <table class = "table">
   <thead>
     <tr>
@@ -19,13 +19,13 @@
         <td><%= barber.phone %></td>
         <td><%= barber.email %></td>
         <td><%= link_to 'Show', barber %></td>
-        <td><%= link_to 'Edit', edit_barber_path(barber) %></td>
-        <td><%= link_to 'Destroy', barber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+
+</div>
 <br>
 
-<%= link_to 'New Barber', new_barber_path %>
+

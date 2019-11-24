@@ -9,14 +9,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 </head>
-<header>
-  <% if signed_in? %>
-    Signed in as: <%= current_user.email %>
-    <%= button_to 'Sign out', sign_out_path, method: :delete %>
-  <% else %>
-    <%= link_to 'Sign in', sign_in_path %>
-  <% end %>
-</header>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -27,21 +20,22 @@
       <li><a href="/contact">Contact us</a></li>
       <li><a href="/bookings">Book an appointment</a></li>
       <li><a href="/our-team">Our Team</a></li>
-
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"> <% if signed_in? %>
+      <li><a href="/sign_in"> <% if signed_in? %>
           Signed in as: <%= current_user.email %>
         <% else %>
-          <%= link_to 'Sign in', sign_in_path %>
+          <%= button_to 'Sign in', sign_in_path, class:"btn btn-primary" %>
         <% end %></a></li>
-      <li><a href="#">
+      <li><a href="/signout">
 
         <% if signed_in? %>
-          <%= button_to 'Sign out', sign_out_path, method: :delete %> <%end%> </a></li>
+          <%= button_to 'Sign out', sign_out_path, method: :delete, class: "btn btn-primary" %> <%end%> </a></li>
     </ul>
   </div>
 </nav>
+
+
 <body>
 
 

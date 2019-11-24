@@ -11,6 +11,12 @@
   <%= @booking.date %>
 </p>
 
+  <p>
+    <strong>Time:</strong>
+    <%= @booking.time.strftime("%I:%M%p") %>
+  </p>
+
+
 <p>
   <strong>Status:</strong>
   <%= @booking.status %>

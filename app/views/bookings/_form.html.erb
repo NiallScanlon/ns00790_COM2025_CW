@@ -12,29 +12,34 @@
   <% end %>
 
 
-  <div class = "container-fluid">
     <h1>New Booking</h1>
-  <div class = "field">
+  <div class = "form-group">
     <%= form.label :Barber %>
-    <%= collection_select(:booking, :barber_id, Barber.all, :id, :name, {}, {:multiple => false} )%>
+    <%= collection_select(:booking, :barber_id, Barber.all, :id, :name, {}, {:multiple => false})%>
   </div>
 
-  <div class="field">
+
+  <div class="form-group">
     <%= form.label :date %>
-    <%= form.datetime_select :date %>
+    <%= form.date_select :date, class: "form-control" %>
   </div>
+    <div class="form-group">
+      <%= form.label :time %>
+      <%= form.time_select :time, class: "form-control" %>
+    </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :status %>
-    <%= form.select :status, ["Booked", "Cancelled"] %>
+    <%= form.select :status, ["Booked", "Cancelled"], class: "form-control" %>
   </div>
 
-  <div class = "field" style = 'display:none;'>
+  <div class = "form-group" style = 'display:none;'>
     <%=form.select :user_id,  [current_user.id] %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
-  </div>
+    <%= form.submit class:"btn btn-primary" %>
+    <%= button_to 'Back', bookings_path, class:"btn btn-primary"%>
+
   </div>
 <% end %>
