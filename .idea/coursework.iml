@@ -40,7 +40,6 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.3, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="amoeba (v3.1.0, ruby-2.5.7-p206) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="archive-zip (v0.12.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.7.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, ruby-2.5.7-p206) [gem]" level="application" />
@@ -52,7 +51,6 @@
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.0.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.29.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v3.0.0, ruby-2.5.7-p206) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="chromedriver-helper (v2.1.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="clearance (v1.17.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.2, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.2.2, ruby-2.5.7-p206) [gem]" level="application" />
@@ -67,8 +65,6 @@
     <orderEntry type="library" scope="PROVIDED" name="email_validator (v1.6.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, ruby-2.5.7-p206) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.9.0, ruby-2.5.7-p206) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.9.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.11.2, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="formatador (v0.2.5, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.5.7-p206) [gem]" level="application" />
@@ -77,7 +73,6 @@
     <orderEntry type="library" scope="PROVIDED" name="guard-rspec (v4.7.3, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v5.1.2, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.7.0, ruby-2.5.7-p206) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.9.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.5, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v6.0.1, ruby-2.5.7-p206) [gem]" level="application" />

@@ -1,3 +1,4 @@
 $(document).ready(function() {
-    console.log("ready!");
+    window.onbeforeunload = function() {
+        return "Dude, are you sure you want to leave? Think of the kittens!";
 });

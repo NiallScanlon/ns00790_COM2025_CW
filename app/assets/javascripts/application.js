@@ -18,3 +18,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require myjs.js
+
+$(document).ready(function() {
+
+});
