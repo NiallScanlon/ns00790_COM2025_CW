@@ -45,8 +45,24 @@
       <div class="flash <%= key %>"><%= value %></div>
     <% end %>
   </div>
+  <div id="content">
 
   <%= yield %>
+  </div>
 </section>
 </body>
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <div class="container">
+
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <a href="bookings/new" class="btn btn-outline-white btn-rounded">Book a haircut now!</a>
+      </li>
+    </ul>
+
+  </div>
+
+
+</footer>
 </html>

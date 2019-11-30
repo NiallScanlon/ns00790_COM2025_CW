@@ -16,9 +16,11 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
-//= require jquery_ujs
-//= require myjs.js
+//= require jquery.validate.additional-methods
+//= require jquery.validate
 
 $(document).ready(function() {
+    $("form").validate();
+
 
 });

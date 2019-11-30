@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, :set_booking, only: [:show, :edit, :update, :destroy]
 
-
+#This action defines and displays all of the bookings to the user if they are signed in.
   def index
     if current_user.nil?
       redirect_to '/sign_up'
@@ -10,6 +10,7 @@ class BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
+#The show action is used to show a specific booking when requested by the user.
   def show
     if current_user.nil?
       redirect_to '/sign_up'
@@ -18,7 +19,7 @@ class BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
-  # GET /bookings/new
+  #By creating a new booking, the new method can make a @booking instance variable accessible in the view.
   def new
     if current_user.nil?
       redirect_to '/sign_up'
@@ -27,7 +28,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
-
+#The create action validates if the booking is at a valid time using the .between? method. If the proposed time is between & unique, a new booking will be created.
   def create
     if current_user.nil?
       redirect_to '/sign_up'
@@ -46,7 +47,7 @@ class BookingsController < ApplicationController
     end
     end
 
-
+#The update method allows the user to edit a booking.
   def update
     if current_user.nil?
       redirect_to '/sign_up'
@@ -63,8 +64,7 @@ class BookingsController < ApplicationController
     end
   end
 
-  # DELETE /bookings/1
-  # DELETE /bookings/1.json
+  #The destroy method allows a user to cancel their own booking & not others.
   def destroy
     if current_user.nil?
       redirect_to '/sign_up'

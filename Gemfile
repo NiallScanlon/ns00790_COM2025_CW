@@ -27,6 +27,7 @@ gem 'amoeba'
 gem 'mail_form'
 gem 'rails-controller-testing'
 gem 'jquery-rails'
+gem 'jquery-validation-rails'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'rails_admin'
 # Reduces boot times through caching; required in config/boot.rb

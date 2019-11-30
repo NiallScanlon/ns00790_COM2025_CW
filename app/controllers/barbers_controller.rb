@@ -1,5 +1,5 @@
 class BarbersController < ApplicationController
-  before_action :set_barber, only: [:show, :edit, :update, :destroy]
+  before_action :set_barber, only: [:show]
 
 
   def index
@@ -16,8 +16,4 @@ class BarbersController < ApplicationController
       @barber = Barber.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def barber_params
-      params.require(:barber).permit(:name, :phone, :email)
-    end
 end
