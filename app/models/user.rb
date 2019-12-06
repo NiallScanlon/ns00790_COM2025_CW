@@ -3,5 +3,7 @@ class User < ApplicationRecord
 
   validates  :email, uniqueness: true, presence: true
 
+  has_one :booking
+  has_one :barber, through: :booking
 
 end

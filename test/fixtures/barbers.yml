@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  phone: MyString
-  email: MyString
+  id: 1
+  name: Niall Scanlon
+  phone: 07903369640
+  email: niallscanlon98@outlook.com
 
 two:
-  name: MyString
-  phone: MyString
-  email: MyString
+  id: 2
+  name: Jez Willis
+  phone: 4912499142
+  email: jezwills@outlook.com

@@ -1,13 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   barber_id: 1
   date: 2019-11-14 13:02:51
-  status: MyString
+  status: Booked
   user_id: 1
 
 two:
-  barber_id: 1
+  barber_id: 2
   date: 2019-11-14 13:02:51
-  status: MyString
-  user_id: 1
+  status: Booked
+  user_id: 2

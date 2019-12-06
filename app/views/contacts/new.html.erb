@@ -2,7 +2,7 @@
 
 
 <div class ="container-fluid">
-  <h1 class = "title">Contact us</h1>
+  <h1 class = "title"><%= t('contact') %></h1>
   <%= form_for @contact do |f| %>
     <%= f.label :name, :class =>"textl"%><br>
     <%= f.text_field :name, required: true, :class=>"texta" %><br>

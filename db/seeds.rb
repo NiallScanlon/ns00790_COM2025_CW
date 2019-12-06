@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 user = User.create! :email => 'admin@admin.com', :password => 'admin', :isAdmin => '1'
+user2 = User.create! :email=> 'user@user.com', :password => 'user', isAdmin => '0'
 
 barber1 = Barber.create! :id => 1, :name => 'Niall Scanlon', :email => 'niallscanlon98@outlook.com', :phone => '079033693249'
 barber2 = Barber.create! :name => 'Jez Willis', :email => 'jezwills@outlook.com', :phone => '07903213249'

@@ -1,9 +1,11 @@
 class ContactsController < ApplicationController
 
+  #The new action allows
   def new
     @contact = Contact.new
   end
 
+  #The create action allows the user to send the contact form.
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request

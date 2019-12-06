@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
       redirect_to '/sign_up'
       flash[:error] ="Please sign in to continue."
     end
-    @bookings = Booking.all
+    @booking = Booking.find(params[:id])
   end
 
   #By creating a new booking, the new method can make a @booking instance variable accessible in the view.
