@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_01_121947) do
+ActiveRecord::Schema.define(version: 2019_12_11_151338) do
 
   create_table "barbers", force: :cascade do |t|
-    t.string "name"
-    t.string "phone"
-    t.string "email"
+    t.string "name", null: false
+    t.string "phone", null: false
+    t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.integer "barber_id"
-    t.string "status"
-    t.integer "user_id"
+    t.integer "barber_id", null: false
+    t.string "status", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date"
