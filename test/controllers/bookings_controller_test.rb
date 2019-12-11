@@ -13,6 +13,12 @@ class BookingsControllerTest < ActionDispatch::IntegrationTest
    manual_sign_in_as(@user)
     get bookings_url
     assert_response :success
+    assert_select 'h1', "Bookings"
+    assert_select 'th', "Barbers"
+    assert_select 'th', "Time"
+    assert_select 'th', "Status"
+    assert_select 'th', "Date"
+   assert_select 'button', "New Booking"
   end
 #Testing index method fail case
   test 'user should not be able to visit bookings whilst not logged in' do
@@ -44,12 +50,21 @@ end
     assert_response :redirect
   end
 
-  #Testing edit pass case with fixtures
- # test 'user should be able to edit their own booking whilst logged in' do
-  #  manual_sign_in_as(@user)
-   # get bookings_path(@booking)
-    #put :update => {status: 'Cancelled'}
-  #end
+  #Testing edit pass case with model
+  test 'user should be able to edit their own booking whilst logged in' do
+    manual_sign_in_as(@user)
+   booking = Booking.new(barber_id:1, status:'Booked', user_id:@user.id, date:Date.today, time:@time.strftime('%H:%M'))
+    booking.update(status:'Cancelled')
+  assert_equal booking.status, 'Cancelled'
+  end
+
+
+  #Testing edit fail case with model
+  test 'user should not be able to edit their own booking whilst logged out' do
+    booking = Booking.new(barber_id:1, status:'Booked', user_id:@user.id, date:Date.today, time:@time.strftime('%H:%M'))
+    booking.update(status:'Cancelled')
+    assert booking.status, 'Cancelled'
+  end
 #Testing delete pass case - the user should be able to delete a record if logged in, and that record corresponds to the user.
   # We can test this by checking the model count for records.
   test'Delete action should work if logged in'do

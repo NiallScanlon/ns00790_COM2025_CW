@@ -18,9 +18,12 @@
 //= require jquery
 //= require jquery.validate.additional-methods
 //= require jquery.validate
+//= require rails.validations
 
 $(document).ready(function() {
-    $("form").validate();
+    $("#bookBTN").click(function(){
+        alert("You have successfully booked!")
+    });
 
 
 });

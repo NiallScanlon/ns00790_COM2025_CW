@@ -74,7 +74,7 @@ class BookingsController < ApplicationController
     if current_user.id == @booking.user_id
     @booking.destroy
     else
-    flash[:error] ="You cannot cancel someone elses booking."
+    flash[:error] ="You cannot cancel someone else's booking."
     end
 
     respond_to do |format|

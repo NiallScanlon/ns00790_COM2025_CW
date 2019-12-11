@@ -3,7 +3,7 @@
 
 <div class ="container-fluid">
   <h1 class = "title"><%= t('contact') %></h1>
-  <%= form_for @contact do |f| %>
+  <%= form_for @contact,  validate: true do |f| %>
     <%= f.label :name, :class =>"textl"%><br>
     <%= f.text_field :name, required: true, :class=>"texta" %><br>
 

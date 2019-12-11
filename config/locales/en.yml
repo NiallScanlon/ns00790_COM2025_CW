@@ -2,7 +2,6 @@ en:
   title: "Palm Valley Barbers"
   caption: "Established 2019."
   barber: "Barbers"
-  date: "Date"
   time: "Time"
   status: "Status"
   name: "Name"
@@ -16,6 +15,11 @@ en:
   appointment: "Book an appointment"
   team: "Our team"
   new: "New Booking"
+  date:
+    order:
+      - :day
+      - :month
+      - :year
 
 
 
