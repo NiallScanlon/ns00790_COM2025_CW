@@ -16,10 +16,10 @@
       <a class="navbar-brand" href="/home"><%= t('title') %></a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/home"><%= t('home') %></a></li>
-      <li><a href="/contact"><%= t('contact') %></a></li>
-      <li><a href="/bookings"><%= t('appointment') %></a></li>
-      <li><a href="/our-team"><%=t('team') %></a></li>
+      <li class="active" id ="home"><a href="/home"><%= t('home') %></a></li>
+      <li><a href="/contact" id ="contact"><%= t('contact') %></a></li>
+      <li><a href="/bookings" id="bookings"><%= t('appointment') %></a></li>
+      <li><a href="/our-team" id = "team"><%=t('team') %></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/sign_in"> <% if signed_in? %>
@@ -32,6 +32,9 @@
         <% if signed_in? %>
           <%= button_to 'Sign out', sign_out_path, method: :delete, class: "btn btn-primary" %> <%end%> </a></li>
     </ul>
+
+
+
   </div>
 </nav>
 
@@ -60,8 +63,10 @@
       <li class="list-inline-item">
         <a href="bookings/new" class="btn btn-outline-white btn-rounded"><%= t('book') %></a>
       </li>
-    </ul>
 
+       <button id = "increaseFont" class ="btn btn-primary">Increase Font Size</button>
+      <button id = "decreaseFont" class ="btn btn-primary">Decrease Font Size</button>
+    </ul>
   </div>
 
 

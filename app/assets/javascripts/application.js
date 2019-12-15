@@ -21,9 +21,26 @@
 //= require rails.validations
 
 $(document).ready(function() {
-    $("#bookBTN").click(function(){
-        alert("You have successfully booked!")
+    $('#increaseFont').on('click', function() {
+        $('*').each(function() {
+            var fontsize = parseInt($(this).css('font-size'));
+            console.log(fontsize);
+            var newFontsize = (fontsize * 1.1) + 'px';
+            console.log(newFontsize)
+            $(this).css('font-size', newFontsize);
+        });
     });
 
-
+    $('#decreaseFont').on('click', function() {
+        $('*').each(function() {
+            var fontsize = parseInt($(this).css('font-size'));
+            console.log(fontsize);
+            var newFontsize = (fontsize / 1.1) + 'px';
+            console.log(newFontsize)
+            $(this).css('font-size', newFontsize);
+        });
+    });
 });
+
+
+

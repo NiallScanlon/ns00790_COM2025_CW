@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <div class = "container-fluid">
-<p>
+<p id = "th1">
   <strong>Barber:</strong>
   <%= Barber.find(@booking.barber_id).name %>
 </p>
 
-<p>
+<p id = "th1">
   <strong>Date:</strong>
   <%= @booking.date %>
 </p>
 
-  <p>
+  <p id = "th1">
     <strong>Time:</strong>
     <%= @booking.time.strftime("%I:%M%p") %>
   </p>
 
 
-<p>
+<p id = "th1">
   <strong>Status:</strong>
   <%= @booking.status %>
 </p>
